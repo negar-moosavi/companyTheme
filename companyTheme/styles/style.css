@@ -1,0 +1,340 @@
+@import 'reset.css';
+
+@font-face {
+    font-family: 'vazir';
+    src: url('../font/');
+    src: url('../font/?#iefix') format('embedded-opentype'),
+    url('../font/vazir.woff') format('woff'),
+    url('../font/vazir.ttf') format('truetype'),
+    url('../font/vazir.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+ /* general styles */
+body , input , button
+{
+    direction: rtl;
+    font-family: vazir;
+}
+*
+{
+    box-sizing: border-box;
+}
+
+/* header */
+#header
+{
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(195deg, rgba(13, 71, 161, 1) 0%, rgba(30, 136, 229, 1) 100%);
+
+}
+.container
+{
+    width: 1000px;
+    margin: auto;
+}
+#header .container .logo
+{
+    float: right;
+    padding-top: 16px;
+}
+#header .container .logo img
+{
+    width: 60px;
+}
+
+/* header navigation */
+#navigation
+{
+    float: left;
+    padding-top: 25px;
+}
+#navigation ul li
+{
+    display: inline-block;
+}
+#navigation ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    padding: 5px 10px;
+}
+#navigation ul li a:hover
+{
+    border-bottom: 2px solid #fff;
+    transition: 0.3s;
+}
+#navigation svg
+{
+    font-size: 22px;
+    /* position: relative;
+    top: 4px;
+    left: 6px; */
+    margin-left: 8px;
+    vertical-align: -6px;
+}
+#navigation .fa-store
+{
+    font-size: 20px;
+}
+.clear
+{
+    clear: both;
+}
+
+/* header section */
+#subscribe
+{
+    text-align: center;
+    padding-top: 50px;
+}
+#subscribe .title
+{
+    font-size: 60px;
+    color: #fff;
+    font-weight: bold;
+}
+#subscribe .subtitle
+{
+    font-size: 25px;
+    padding: 40px 0;
+    color: #fff;
+}
+#subscribe .form .email
+{
+    border: none;
+    background-color: #fff;
+    padding: 15px;
+    width: 400px;
+    border-radius: 5px;
+}
+#subscribe .form .email:focus
+{
+    outline: none;
+}
+#subscribe .form .submit-btn
+{
+    border: none;
+    background-color: #212326;
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+#subscribe .form .submit-btn:hover
+{
+    box-shadow: 0 5px 25px 0 rgb(0 0 0 / 25%);
+    cursor: pointer;
+}
+#subscribe .form .submit-btn svg
+{
+    font-size: 16px;
+    margin-right: 10px;
+    vertical-align: -5px;
+}
+#subscribe .desc
+{
+    color: #fff;
+    margin: 30px 0;
+}
+#subscribe .header-img
+{
+    position: relative;
+    top: 7px;
+}
+
+/* why-us section */
+#why-us
+{
+    margin-top: 250px;
+    text-align: center;
+}
+#why-us .item
+{
+    width: 30%;
+    /* height: 100px; */
+    margin: 15px;
+    /* background-color: aquamarine; */
+    display: inline-block;
+    border-radius: 15px;
+    text-align: right;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 25%);
+    padding: 20px;
+    transition: 0.25s;
+}
+#why-us .item:hover
+{
+    box-shadow: 0 5px 20px 0 rgb(0 0 0 / 25%);
+    transition: 0.25s;
+}
+#why-us .item .logo svg
+{
+    font-size: 45px;
+    color: rgb(13, 71, 161);
+    /* float: right; */
+}
+#why-us .item .title
+{
+    font-size: 23px;
+    font-weight: bold;
+    padding: 15px 0;
+}
+#why-us .item .desc
+{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+/* customers section */
+#customers
+{
+    width: 100%;
+    height: 200px;
+    background-image: url('../images/paris22.jpg');
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#customers .container h2
+{
+    font-size: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+#customers .container h2:before
+{
+    content: '.: ';
+}
+#customers .container h2:after
+{
+    content: ' :.';
+}
+#customers .container ul li
+{
+    display: inline-block;
+    width: 20%;
+}
+#customers .container ul li img
+{
+    width: 150px;
+    opacity: 1;
+}
+#customers .container ul li img:hover
+{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* posts section */
+#posts .title
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 25px 0;
+}
+#posts .post-item
+{
+    width: 30%;
+    height: 280px;
+    display: inline-block;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    margin: 20px 15px;
+    position: relative;
+}
+#posts .post-item:hover
+{
+    box-shadow: 0 5px 20px 0 rgb(0 0 0 / 25%);
+    transition: 0.25s;
+}
+#posts .post-item .post-image img
+{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+}
+#posts .post-item .post-title
+{
+    padding: 10px 5px;
+    font-size: 20px;
+}
+#posts .post-item .post-title a
+{
+    text-decoration: none;
+    color: #1c1c1c;
+}
+#posts .post-item .post-title a:hover
+{
+    color: #404040;
+}
+#posts .post-data
+{
+    font-size: 14px;
+}
+#posts .post-data .post-date
+{
+    position: absolute;
+    right: 5px;
+    bottom: 7px;
+}
+#posts .post-data .read-more
+{
+    position: absolute;
+    left: 5px;
+    bottom: 7px;
+}
+#posts .post-data .read-more a
+{
+    text-decoration: none;
+    color: #404040;
+}
+#posts .post-data .read-more a:hover
+{
+    color: #2b2b2b;
+}
+
+/* footer */
+#footer
+{
+    width: 100%;
+    background-color: #e0e0e0;
+    margin-top: 20px;
+}
+#footer .social-media
+{
+    text-align: center;
+    padding: 15px 0;
+}
+#footer .social-media li
+{
+    display: inline-block;
+    margin-right: 15px;
+}
+#footer .social-media a
+{
+    font-size: 30px;
+    color: #3d3d3d;
+    vertical-align: -6px;
+    transition: 0.3s;
+}
+#footer .social-media a:hover
+{
+    /* font-size: 35px; */
+    transition: 0.3s;
+    color: #262626;
+}
+#footer .copy-right
+{
+    text-align: center;
+    padding: 10px 0;
+    background-color: #424242;
+    color: #fff;
+}
